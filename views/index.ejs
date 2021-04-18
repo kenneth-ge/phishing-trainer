@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="index.css">
+
+<div class="topnav">
+    <a class="active" href="#home">Home</a>
+  </div>
+
+<div class="center">
+  <h1>Phishing Trainer</h1>
+  <button onclick="newscam()">Generate new phishing scam</button>
+  <iframe id="iframe" >
+
+  </iframe>
+  
+  <div id="choices" style="display: none;">
+      <h1>Is this a scam?</h1>
+      <button onclick="yes()">Yes</button>
+      <button onclick="no()">No</button>
+      <br>
+  </div>
+
+  <h1 id="correct"></h1>
+  <p id="overall"></p>
+
+  <ul id="reasons">
+
+  </ul>
+</div>
+
+<script src="index.js"></script>

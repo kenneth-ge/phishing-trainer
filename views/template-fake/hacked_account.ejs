@@ -1,0 +1,188 @@
+<%  const names = ['Netflix', 'Amazon', 'Digital Ocean']
+                            const typonames = ['Netflix', 'Amazon', 'Digital Ocean']
+                            const urls = ['netflixsupport.io', 'amazon.tk', 'digitaloceansupport.com']
+                            const images = ['images/netflix-logo.svg', 'images/amazon2.png', 'images/digitalocean.png']
+                            
+                            function getRandomInt(max) {
+                                return Math.floor(Math.random() * Math.floor(max));
+                            }
+
+                            var int = getRandomInt(names.length)
+                            var name = names[int]
+                            var image = images[int]
+                            var typoname = typonames[int]
+                            var url = urls[int]
+
+                            var link = '/wrong?reasons=[0,1]'
+                            %>
+
+<link rel="stylesheet" href="test.css">
+<div id="DIV_1937">
+    <div id="DIV_1938">
+        <div id="DIV_1939">
+            <span id="SPAN_1940"></span>
+            <div id="DIV_1941">
+                <span id="SPAN_1942"><img src="https://mail.google.com/mail/u/0/images/cleardot.gif" alt="Collapse all" id="IMG_1943"></span>
+            </div><span id="SPAN_1944"></span>
+            <div id="DIV_1945">
+                <span id="SPAN_1946"><img src="https://mail.google.com/mail/u/0/images/cleardot.gif" alt="Expand all" id="IMG_1947"></span>
+            </div><span id="SPAN_1948"></span>
+            <div id="DIV_1949">
+                <span id="SPAN_1950"><img src="https://mail.google.com/mail/u/0/images/cleardot.gif" alt="Print all" id="IMG_1951"></span>
+            </div><span id="SPAN_1952"></span>
+            <div id="DIV_1953">
+                <span id="SPAN_1954"><img src="https://mail.google.com/mail/u/0/images/cleardot.gif" alt="In new window" id="IMG_1955"></span>
+            </div>
+        </div>
+    </div>
+    <div id="DIV_1956">
+        <div id="DIV_1957">
+            <h2 id="H2_1958">
+                Password Reset
+            </h2><span id="SPAN_1959"></span>
+        </div>
+        <div id="DIV_1963">
+        </div>
+    </div>
+</div>
+<div id="DIV_1975">
+    <div id="DIV_1976">
+        <div id="DIV_1977">
+            <div id="DIV_1978">
+            </div><img id="IMG_1979" src="https://ssl.gstatic.com/ui/v1/icons/mail/profile_mask_2x.png" alt='' />
+        </div>
+    </div>
+    <div id="DIV_1980">
+        <div id="DIV_1981">
+            <table id="TABLE_1982">
+                <tbody id="TBODY_1983">
+                    <tr id="TR_1984">
+                        <td id="TD_1985">
+                            <table id="TABLE_1986">
+                                <tbody id="TBODY_1987">
+                                    <tr id="TR_1988">
+                                        <td id="TD_1989">
+                                            <span id="SPAN_1991"><span id="SPAN_1992"><%= typoname %></span> <span id="SPAN_1993"><span id="SPAN_1994">&lt;</span>noreply@<%= url%><span id="SPAN_1995">&gt;</span></span></span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td id="TD_1996">
+                            <div id="DIV_1997">
+                                <span id="SPAN_1998"></span><span id="SPAN_1999">5:14 PM (9 minutes ago)</span>
+                                <div id="DIV_2000">
+                                    <span id="SPAN_2001"><img src="https://mail.google.com/mail/u/0/images/cleardot.gif"  id="IMG_2002" /></span>
+                                </div>
+                            </div>
+                        </td>
+                        <td id="TD_2003">
+                        </td>
+                        <td rowspan="2" id="TD_2004">
+                            <div id="DIV_2005">
+                                <img src="https://mail.google.com/mail/u/0/images/cleardot.gif"  id="IMG_2006" />
+                            </div>
+                            <div id="DIV_2007">
+                                <img src="https://mail.google.com/mail/u/0/images/cleardot.gif"  id="IMG_2008" />
+                            </div>
+                        </td>
+                    </tr>
+                    <tr id="TR_2009">
+                        <td colspan="3" id="TD_2010">
+                            <table id="TABLE_2011">
+                                <tbody id="TBODY_2012">
+                                    <tr id="TR_2013">
+                                        <td id="TD_2014">
+                                            <div id="DIV_2015">
+                                                <span id="SPAN_2016">to <span id="SPAN_2017">me</span></span>
+                                            </div>
+                                            <div id="DIV_2018">
+                                                <img src="https://mail.google.com/mail/u/0/images/cleardot.gif"  id="IMG_2019" />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="DIV_2020">
+            <div id="DIV_2021">
+            </div>
+            <div id="DIV_2022">
+            </div>
+            <div id="DIV_2023">
+            </div>
+            <div id="DIV_2024">
+            </div>
+        </div>
+        <div id="DIV_2025">
+            <div id="DIV_2026">
+            </div>
+            <div id="DIV_2027">
+            </div>
+            <div id="DIV_2028">
+                <div id="DIV_2029">
+                    <div id="DIV_2030">
+
+                        <img src="<%= image%>" alt="<%= name %>" width="300px">
+                        
+                        <h1>Reset Password</h1>
+                            Dear, <br><br>
+
+                            <% if(int % 2 == 0) {%>
+                            We understand that you'd like to change your password. Just click <a href="<%= link %>">here</a> and follow the prompts. Don't forget that your password is case sensitive!
+                                <br><br>
+                            If you have any questions, we're always happy to help. Just call us at 1 (877) 742-1335 anytime.
+
+                            <% }else{ %>
+                                We believe that your <%= name %> account credentials may have been included in a recent release of email addresses and passwords from a breach at another company. Just to be safe, we ask that you reset your password as soon as possible. 
+                                <br><br>
+                                Please visit the <a href="<%= link %>">login page</a>, click on "sign in," and then click "forgot your email or password." Follow the instructions to reset your password. 
+                                <br><br>
+                                — The <%= name %> Team
+                            <% } %>
+                    </div>
+                    <div id="DIV_2031">
+                    </div>
+                    <div id="DIV_2032">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            
+            /* Header/Logo Title */
+            #DIV_2030 {
+              color: gray;
+              font-family:Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+            h1 {
+                color: rgb(25, 25, 25);
+                font-size: 25;
+            }
+
+            a {
+                font-size: 14px;
+                font-weight: bold;
+                color: rgb(90, 100, 255);
+                text-decoration: underline;
+            }
+            
+            /* Page Content */
+            .content {padding:20px;}
+            </style>
+    </div>
+    <script>
+        window.good = false
+        window.overall = `Unfortunately, this is a <i>very</i> common scam. The email you see above is actually a real email someone received pretending to be <%= name %>. Here are a few things to look out for when you see something like this:`
+        window.reasons = [`The email address is not the company's official domain`, 
+        `The email begins with "Dear," instead of calling you by your name`]
+
+
+    </script>
+</div>
